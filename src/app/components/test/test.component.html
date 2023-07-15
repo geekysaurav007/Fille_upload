@@ -1,0 +1,17 @@
+<hr>
+<div class="container">
+    <select (change)="onSelect($event)">
+    <option>seelect state</option>
+    <option *ngFor="let state of data" value="{{state.state}}">{{state.state}}</option>
+   </select>
+
+   <hr>
+   <select *ngIf="magic" >
+    <option>seelect state</option>
+    <option *ngFor="let data of cities" >{{data}}</option>
+   </select>
+
+
+
+</div>
+
